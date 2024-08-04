@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notiz</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./styleSheets/section-create_notiz.css">
+    <link rel="stylesheet" href="./styleSheets/section-show_notiz.css">
+
+    <script src="script.js" ></script>
+    <script src="./functions.js/note.js"></script>
+    <script src="./functions.js/inProgress.js"></script>
+    <script src="./functions.js/done.js"></script>
+    <script src="./templates/template.js"></script>    
+
+
+
+</head>
+<body onload="init()">
+<main class="head">  
+    <h1>Notizblock</h1>
+
+    <section class="create_notiz">    
+        <div class="title_Input">    
+            <input class="title" id="setNotiz" type="text">Notiz
+        </div>
+        <div class="discription_Input">
+            <input class="discription" id="setDescriptopn" type="text" >Beschreibung
+        </div>
+        <div class="save_Notiz">
+            <button id="saveNotiz" onclick="addNote()">Notiz speichern</button>
+        </div>
+
+    </section>
+</main>
+<main class="notiz_body">
+    <section class="Notiz_container show_notiz">
+            <h2>ASSIGNMENT</h2>
+            <div id="contentShowNotiz" ></div>
+    </section>
+
+    <section class="Notiz_container archive_notiz">
+            <h2>IN PROGRESS</h2>
+            <div id="contentInProgressNotiz" ></div>
+    </section>
+
+    <section class="Notiz_container deleted_notiz">
+            <h2>DONE</h2>
+            <div id="contentDoneNotiz" ></div>
+    </section>
+</main>
+</body>
+</html>

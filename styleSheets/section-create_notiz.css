@@ -1,0 +1,47 @@
+.head{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.create_notiz{
+    width: 80%;
+    border: 2px solid violet;
+    padding: 10px;
+}
+
+.title_Input{
+    color: white;    
+}
+
+.title{
+    margin-right: 5px;
+    width: 50%;
+}
+
+.discription{
+    margin-right: 5px;
+    margin-top: 10px;
+    height: 80px;
+    width: 50%;
+}
+
+.discription_Input{
+    color: white;
+}
+
+.save_Notiz{
+    margin-top: 30px;
+    margin-bottom: 10px;    
+}
+
+.save_Notiz button{
+    width: 50%;
+}
+
+input[type=text] {
+    word-wrap: break-word;
+    word-break: break-all;
+    height: 80px;
+}

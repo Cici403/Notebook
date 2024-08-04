@@ -1,0 +1,43 @@
+body{
+    margin: 0;
+    background-color: rgb(39, 77, 77);
+}
+
+button{
+    text-decoration: none;
+    background: #000000;
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.notiz_body{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+
+.Notiz_container{
+    display: flex;
+    flex-direction: column;
+    width: 30%; 
+}
+
+.note{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: solid 3px #f7ff00;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #707070;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
