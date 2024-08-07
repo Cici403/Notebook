@@ -5,8 +5,8 @@ function addNote(){
     let noteInpuRef = document.getElementById('setNotiz');
     let descriptionInputRef = document.getElementById('setDescriptopn');
     if(noteInpuRef.value != "" && descriptionInputRef.value != ""){
-        myNotes.push(noteInpuRef.value)
-        myDescriptions.push(descriptionInputRef.value);
+        myNotes.push(allNotes.value)
+        myDescriptions.push(allNotes + "Descriptions".value);
     }
         saveToLocalStorage()
         renderNotes()
@@ -37,7 +37,18 @@ function getFromLocalStorage(){
 function renderNotes() {
     let contentRef = document.getElementById('contentShowNotiz')
     contentRef .innerHTML = "";
-    for(let indexNote = 0; indexNote < myNotes.length; indexNote++){
+    for(let indexNote = 0; indexNote < allNotes.myNotes.length; indexNote++){
         contentRef.innerHTML += getNoteTemplate(indexNote);
+    }
+}
+
+
+
+
+function renderDoneNotesNotes() {
+    let donecontentRef = document.getElementById('contentDoneNotiz')
+    donecontentRef.innerHTML = "";
+    for(let indexDoneNote = 0; indexDoneNote < allNotes.doneNotes.length; indexDoneNote++){
+        donecontentRef.innerHTML += getInDoneNoteTemplate(indexDoneNote);
     }
 }

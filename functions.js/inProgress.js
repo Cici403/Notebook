@@ -40,7 +40,7 @@ function saveToLocalStorage(){
 function renderInProgressNotes() {
     let inProgresscontentRef = document.getElementById('contentInProgressNotiz')
     inProgresscontentRef.innerHTML = "";
-    for(let indexinProgressNote = 0; indexinProgressNote < inProgressNotes.length; indexinProgressNote++){
+    for(let indexinProgressNote = 0; indexinProgressNote < allNotes.inProgressNotes.length; indexinProgressNote++){
         inProgresscontentRef.innerHTML += getInProgressNoteTemplate(indexinProgressNote);
     }
 }

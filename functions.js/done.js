@@ -36,7 +36,7 @@ function getDoneNoteFromLocalStorage(){
 function renderDoneNotesNotes() {
     let donecontentRef = document.getElementById('contentDoneNotiz')
     donecontentRef.innerHTML = "";
-    for(let indexDoneNote = 0; indexDoneNote < doneNotes.length; indexDoneNote++){
+    for(let indexDoneNote = 0; indexDoneNote < allNotes.doneNotes.length; indexDoneNote++){
         donecontentRef.innerHTML += getInDoneNoteTemplate(indexDoneNote);
     }
 }
